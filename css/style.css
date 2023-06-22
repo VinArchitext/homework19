@@ -1,6 +1,6 @@
 
 .navigation{
-    background-color:#EEEEEE ;
+    background-color:#F5EFED ;
     display: flex;
     align-items: center;
     box-shadow: 0px 4px 8px #CECECE;
@@ -21,8 +21,21 @@
   -webkit-animation: slide 20s linear infinite;
 }
 
+h1 {
+    color: #7C8483;
+  }
+
+h2{
+    color: #7C8483;
+  }
+
+h3{
+    color: #7C8483;
+  }
+  
 .hero-bkg-animated h1 {
   font-family: sans-serif;
+  color: #7c8483;
 }
 
 @-webkit-keyframes slide {
@@ -72,7 +85,7 @@ li{
     }
     
 button {
-        background-color: #d35269; /* pink*/
+        background-color: #B53428; /*red*/
         border: none;
         color: white;
         padding: 15px 32px;
@@ -85,14 +98,14 @@ button {
 
 
 body {
-    background-color: #EEEEEE;
+    background-color: #F5EFED;
     margin: 0;
     margin-left: auto;
     margin-right: auto;
     max-width: 1200px;
     font-family: 'Helvetica', sans-serif;
     color: #422828;
-    box-shadow: 0px 0px 10px #CECECE;
+    box-shadow: 0px 0px 10px #F5EFED;
 }
 
 .heroImg{
@@ -150,7 +163,7 @@ p{
 }
 
 .footerNav{
-    background-color:#0B7189 ;
+    background-color:#B53428 ;
     display: flex;
     align-items: center;
     flex-direction: row;
