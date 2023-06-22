@@ -38,9 +38,6 @@ h3{
   color: #7c8483;
 }
 
-@-webkit-keyframes slide {
-    from { background-position: 0 0; }
-    to { background-position: -400px 0; }
 }
 .logo{
     width: 23%;
