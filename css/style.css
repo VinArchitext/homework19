@@ -1,45 +1,21 @@
-
-.navigation{
-    background-color:#F5EFED ;
+.navigation {
+    background-color: #F5EFED;
     display: flex;
     align-items: center;
     box-shadow: 0px 4px 8px #CECECE;
     flex-direction: row;
-   justify-content: space-between;
-    padding: 0px 16px 0px 16px;
-     height: 80px; 
+    justify-content: space-between;
+    padding: 0px 16px;
+    height: 80px;
 }
 
-.hero-bkg-animated {
-  background: gray url(https://subtlepatterns.com/patterns/geometry2.png) repeat 0 0;
-  width: 100%;
-  margin: 0;
-  text-align: center;
-  height: 300px;
-  padding-top: 120px;
-  box-sizing: border-box;
-  -webkit-animation: slide 20s linear infinite;
-}
-
-h1 {
+h1,
+h2,
+h3 {
     color: #7C8483;
-  }
-
-h2{
-    color: #7C8483;
-  }
-
-h3{
-    color: #7C8483;
-  }
-  
-.hero-bkg-animated h1 {
-  font-family: sans-serif;
-  color: #7c8483;
 }
 
-}
-.logo{
+.logo {
     width: 23%;
     padding: 1%;
     display: flex;
@@ -48,124 +24,121 @@ h3{
     margin: 10px;
 }
 
-.logoDisplay{
+.logoDisplay {
     display: inline-block;
 }
 
 nav {
-   
     display: inline-block;
     margin: 10px;
 }
 
-nav ul{
+nav ul {
     display: flex;
     flex-direction: row;
     list-style-type: none;
- text-decoration: none;
- align-items: baseline;
+    text-decoration: none;
+    align-items: baseline;
 }
 
-
-li{
+li {
     display: inline-block;
-    padding: 11px 11px;
-    }
+    padding: 11px;
+}
 
+a {
+    text-decoration: none;
+    color: #422828;
+}
 
-    a {
-        text-decoration: none;
-        color: #422828;
-    }
-    a:visited {
-        color: #373737;
-    }
-    
+a:visited {
+    color: #373737;
+}
+
 button {
-        background-color: #B53428; /*red*/
-        border: none;
-        color: white;
-        padding: 15px 32px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 16px;
-        border-radius: 8px;
-      }
-
+    background-color: #B53428;
+    /* red */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 8px;
+}
 
 body {
     background-color: #F5EFED;
-    margin: 0;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
     max-width: 1200px;
     font-family: 'Helvetica', sans-serif;
     color: #422828;
     box-shadow: 0px 0px 10px #F5EFED;
 }
 
-.heroImg{
-    text-align:center;
+.heroImg {
+    text-align: center;
     height: 550px;
 }
 
 img {
     display: inline-block;
     width: 165px;
-    height:auto;
+    height: auto;
     padding: 10px;
 }
 
-p{
+p {
     margin: 50px;
     font-size: small;
 }
-.myskills{
-    text-align:center;
+
+.myskills {
+    text-align: center;
     height: 550px;
 }
+
 .skillscards {
-    display:flex;
-}
-.skillsimage{
     display: flex;
 }
 
-.mywork{
-    text-align:center;
+.skillsimage {
+    display: flex;
+}
+
+.mywork {
+    text-align: center;
     height: 550px;
 }
 
 .workcards {
-    display:grid;
-    grid-template-columns: 1fr 1fr 1fr ;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr;
-    /*1fr divides into ratio */
     grid-template-areas: 
-    "one_workcard two_workcard three_workcard"
-    ;
+      "one_workcard two_workcard three_workcard";
 }
 
-.one_workcard{
+.one_workcard {
     grid-area: one_workcard;
 }
 
-.two_workcard{
+.two_workcard {
     grid-area: two_workcard;
 }
 
-.three_workcard{
+.three_workcard {
     grid-area: three_workcard;
 }
 
-.footerNav{
-    background-color:#B53428 ;
+.footerNav {
+    background-color: #B53428;
     display: flex;
     align-items: center;
     flex-direction: row;
     justify-content: space-between;
-    padding: 0px 16px 0px 16px;
+    padding: 0px 16px;
     height: 80px;
     font-family: 'Helvetica', sans-serif;
     color: white;
