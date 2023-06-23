@@ -16,10 +16,10 @@
     </div>
     <nav>
       <ul>
-        <li><a href="index.html">About Me</a></li>
-        <li>Skills</li>
-        <li>Work</li>
-        <li>Contact</li>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
   </header>
@@ -30,7 +30,7 @@
   </div>
 
   <section class="heroImg">     
-    <h1>About Me</h1>   
+    <h1 id="about">About Me</h1>   
     <div>
       <img src="./images/tha_vin.jpeg" alt="Tha Vin's Photo" />
       <h2>I'm Tha.</h2>
@@ -41,7 +41,7 @@
     </div>
   </section>
 
-  <section class="myskills">
+  <section class="myskills" id="skills">
     <!-- This is where I am using flex --> 
     <h1>Design-To-Market Strategy</h1>
     <p>I am a researcher, designer, and marketer rolled into one.</p>
@@ -78,20 +78,79 @@
       </div>
     </div>
   </section>
+
+  <section class="mywork" id="work">
+    <h1>Case Studies</h1>
+    <p>
+      My work begins and ends with people. 
+    </p>
+       <!--this is where I am using grids--> 
+    <div class="workcards">
+       <div class="one_workcard">
+       <div class="workimage">
+         <img src="images/portfolio_casestudy_1b.png">
+         <!--I don't need a closing img tag--> 
+       </div>   <!--this is for image--> 
+       <h3>Celeste Maria Bautista</h3>
+       <p>“Nursing requires humanity and resiliency. I find both qualities in quietness of nature.”</p>
+       <button>View Case Study</button>
+       </div>
+       <div class="two_workcard">
+         <div class="workimage">
+           <img src="images/portfolio_casestudy_2b.png">
+           <!--I don't need a closing img tag--> 
+         </div>   <!--this is for image--> 
+         <h3>Pimsupansa Pukitsriswat</h3>
+         <p>"I want to share my story of growing up transgender in rural Thailand.”</p>
+         <button>View Case Study</button>
+         </div>
+         <div class="three_workcard">
+           <div class="workimage">
+             <img src="images/portfolio_casestudy_3b.png">
+             <!--I don't need a closing img tag--> 
+           </div>   <!--this is for image--> 
+           <h3>Callum Reeves</h3>
+           <p>"I struggle with balancing demanding bosses, kids and an unlucky love life."</p>
+           <button>View Case Study</button>
+           </div>
+    </div>
+  </section>
   <!-- Footer Section -->  
+  <section>
   <footer class="footerNav"> 
     <div class="logoDisplay">
       <img src="images/tha_vin_khmer.svg" class="logo">
       </div>
-    <nav>
-     <ul>
-         <li>About Me </li>
-         <li> Skills </li>
-         <li> Work </li>
-         <li> Contact </li>
-     </ul>
-    </nav>
+     <nav>
+         <ul>
+             <li><a href="#about">About Me</a></li>
+             <li><a href="#skills">Skills</a></li>
+             <li><a href="#work">Work</a></li>
+             <li><a href="#contact">Contact</a></li>
+         </ul>
+     </nav>
 </footer>
-</div>
-  </body>
+</section>
+
+<!-- Add the following JavaScript code at the end of your body tag -->
+<script>
+    // Smooth scrolling
+    const links = document.querySelectorAll('a');
+
+    for (const link of links) {
+        link.addEventListener('click', clickHandler);
+    }
+
+    function clickHandler(e) {
+        e.preventDefault();
+        const href = this.getAttribute('href');
+        const offsetTop = document.querySelector(href).offsetTop;
+
+        scroll({
+            top: offsetTop,
+            behavior: 'smooth'
+        });
+    }
+</script>
+</body>
 </html>
