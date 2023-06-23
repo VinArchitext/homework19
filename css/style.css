@@ -1,3 +1,5 @@
+/* Default styles */
+
 .navigation {
     background-color: #F5EFED;
     display: flex;
@@ -7,55 +9,55 @@
     justify-content: space-between;
     padding: 0px 16px;
     height: 80px;
-}
-
-h1,
-h2,
-h3 {
+  }
+  
+  h1,
+  h2,
+  h3 {
     color: #7C8483;
-}
-
-.logo {
+  }
+  
+  .logo {
     width: 23%;
     padding: 1%;
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 10px;
-}
-
-.logoDisplay {
+  }
+  
+  .logoDisplay {
     display: inline-block;
-}
-
-nav {
+  }
+  
+  nav {
     display: inline-block;
     margin: 10px;
-}
-
-nav ul {
+  }
+  
+  nav ul {
     display: flex;
     flex-direction: row;
     list-style-type: none;
     text-decoration: none;
     align-items: baseline;
-}
-
-li {
+  }
+  
+  li {
     display: inline-block;
     padding: 11px;
-}
-
-a {
+  }
+  
+  a {
     text-decoration: none;
     color: #422828;
-}
-
-a:visited {
+  }
+  
+  a:visited {
     color: #373737;
-}
-
-button {
+  }
+  
+  button {
     background-color: #B53428;
     /* red */
     border: none;
@@ -66,73 +68,73 @@ button {
     display: inline-block;
     font-size: 16px;
     border-radius: 8px;
-}
-
-body {
+  }
+  
+  body {
     background-color: #F5EFED;
     margin: 0 auto;
     max-width: 1200px;
     font-family: 'Helvetica', sans-serif;
     color: #422828;
     box-shadow: 0px 0px 10px #F5EFED;
-}
-
-.heroImg {
+  }
+  
+  .heroImg {
     text-align: center;
     height: 550px;
-}
-
-img {
+  }
+  
+  img {
     display: inline-block;
     width: 165px;
     height: auto;
     padding: 10px;
-}
-
-p {
+  }
+  
+  p {
     margin: 50px;
     font-size: small;
-}
-
-.myskills {
+  }
+  
+  .myskills {
     text-align: center;
     height: 550px;
-}
-
-.skillscards {
+  }
+  
+  .skillscards {
     display: flex;
-}
-
-.skillsimage {
+  }
+  
+  .skillsimage {
     display: flex;
-}
-
-.mywork {
+  }
+  
+  .mywork {
     text-align: center;
     height: 550px;
-}
-
-.workcards {
+  }
+  
+  .workcards {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr;
     grid-template-areas: 
       "one_workcard two_workcard three_workcard";
-}
-
-.one_workcard {
+  }
+  
+  .one_workcard {
     grid-area: one_workcard;
-}
-
-.two_workcard {
+  }
+  
+  .two_workcard {
     grid-area: two_workcard;
-}
-
-.three_workcard {
+  }
+  
+  .three_workcard {
     grid-area: three_workcard;
-}
-
-.footerNav {
+  }
+  
+  .footerNav {
     background-color: #B53428;
     display: flex;
     align-items: center;
@@ -142,4 +144,24 @@ p {
     height: 80px;
     font-family: 'Helvetica', sans-serif;
     color: white;
-}
+  }
+  
+  /* Media query for mobile devices */
+  
+  @media (max-width: 768px) {
+    .logo {
+      width: 40%;
+    }
+  
+    li {
+      padding: 5px;
+    }
+  
+    .heroImg,
+    .myskills,
+    .mywork {
+      height: auto;
+    }
+  
+    img {
+      width: 100px  
