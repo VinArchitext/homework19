@@ -98,28 +98,30 @@
   
   .myskills {
     text-align: center;
-    height: 550px;
   }
   
   .skillscards {
     display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
   }
   
   .skillsimage {
     display: flex;
+    justify-content: center;
   }
   
   .mywork {
     text-align: center;
-    height: 550px;
+    margin-bottom: 70px;
   }
   
   .workcards {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
     grid-template-areas: 
       "one_workcard two_workcard three_workcard";
+      grid-template-rows: 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
   }
   
   .one_workcard {
@@ -143,6 +145,9 @@
     padding: 0px 16px;
     height: 80px;
     font-family: 'Helvetica', sans-serif;
+    color: white;
+  }
+  .footerNav a:link {
     color: white;
   }
   
